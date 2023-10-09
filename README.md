@@ -14,7 +14,8 @@ about the new IP if the lease was released or the server was rebooted.
 for MS Windows systems. (Windows clients will need python installed prior to use) run `pip install -r requirements.txt`
 on the client. 
 4. Generate the hosts.json based on the example_hosts.json 
-5. Change main.py per comments 
+5. Change main.py per comments, including adding current SSH config to text block and changing the hostname to the
+appropriate f string. 
 6. Create a cron job/scheduled task to run client(_windows).py on the clients as appropriate.
 7. Make sure to change main.py to point to your ssh config file. 
 

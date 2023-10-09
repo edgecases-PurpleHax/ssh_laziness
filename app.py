@@ -5,7 +5,6 @@ app = Flask(__name__)
 
 @app.route('/')
 def get_params():
-    # print(request.args)
     config = {}
     with open('hosts.json', 'r') as f:
         config.update(json.load(f))
